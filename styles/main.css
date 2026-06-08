@@ -1,1 +1,13 @@
 /* CSS file created */
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BASE STYLE */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
