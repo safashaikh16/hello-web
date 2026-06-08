@@ -9,10 +9,6 @@ It showcases my learning journey toward becoming a Data Scientist.
 ## Live Website
  https://safashaikh16.github.io/hello-web/
 
----
-
-## Screenshot
-
 
 ---
 
