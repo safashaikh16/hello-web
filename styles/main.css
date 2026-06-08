@@ -1,13 +1,115 @@
 /* CSS file created */
 
+/* =========================
+   RESET (REQUIRED)
+========================= */
 *, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* BASE STYLE */
+/* =========================
+   BASE STYLES
+========================= */
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(210, 40%, 96%);
+    color: hsl(210, 20%, 20%);
+    line-height: 1.6;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero-section {
+    background: hsl(210, 80%, 30%);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+}
+
+.hero-subtitle {
+    opacity: 0.9;
+}
+
+/* =========================
+   LAYOUT
+========================= */
+
+.main-container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* =========================
+   CARDS (BOX MODEL)
+========================= */
+
+.card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* =========================
+   SKILLS LIST
+========================= */
+
+.skills-list {
+    list-style: none;
+}
+
+.skills-list li {
+    padding: 6px 0;
+}
+
+/* =========================
+   LINKS + HOVER (REQUIRED)
+========================= */
+
+.link-btn {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 8px 12px;
+    background: hsl(210, 80%, 30%);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.link-btn:hover {
+    background: hsl(210, 80%, 40%);
+    transform: translateY(-2px);
+}
+
+/* =========================
+   IMAGE
+========================= */
+
+.profile-img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: hsl(210, 10%, 40%);
 }
