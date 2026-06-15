@@ -44,9 +44,8 @@ body {
 ========================= */
 
 .main-container {
-    max-width: 900px;
-    margin: 30px auto;
-    padding: 0 20px;
+    width: min(1100px, 90%);
+    margin: 2rem auto;
 }
 
 /* =========================
@@ -61,17 +60,6 @@ body {
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-/* =========================
-   SKILLS LIST
-========================= */
-
-.skills-list {
-    list-style: none;
-}
-
-.skills-list li {
-    padding: 6px 0;
-}
 
 /* =========================
    LINKS + HOVER (REQUIRED)
@@ -94,13 +82,59 @@ body {
 }
 
 /* =========================
-   IMAGE
+ Flexbox: navbar
 ========================= */
 
-.profile-img {
-    width: 100%;
-    border-radius: 10px;
-    margin-top: 10px;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem 3rem;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+/* =========================
+ Grid: skills section
+========================= */
+
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem;
+}
+
+.skills-grid span {
+    background: #eef2ff;
+    padding: 0.8rem;
+    border-radius: 999px;
+    text-align: center;
+}
+/* =========================
+ Grid: project gallery 
+========================= */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.project-card {
+    background: #f8fafc;
+    padding: 1.5rem;
+    border-radius: 12px;
 }
 
 /* =========================
