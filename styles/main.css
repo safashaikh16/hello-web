@@ -58,6 +58,32 @@ img {
 }
 
 /* =========================
+ Flexbox: navbar
+========================= */
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem 3rem;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* =========================
    LAYOUT
 ========================= */
 
@@ -80,49 +106,8 @@ img {
 }
 
 
-/* =========================
-   LINKS + HOVER (REQUIRED)
-========================= */
 
-.link-btn {
-    display: inline-block;
-    margin-right: 10px;
-    padding: 8px 12px;
-    background: hsl(210, 80%, 30%);
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    transition: all 0.2s ease;
-}
 
-.link-btn:hover {
-    background: hsl(210, 80%, 40%);
-    transform: translateY(-2px);
-}
-
-/* =========================
- Flexbox: navbar
-========================= */
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
-    padding: 1rem 3rem;
-}
-
-.nav-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    list-style: none;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-}
 
 /* =========================
  Grid: skills section
@@ -146,7 +131,7 @@ img {
 ========================= */
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: 1fr;
     gap: 1.5rem;
     margin-top: 1.5rem;
 }
@@ -184,6 +169,26 @@ img {
 }
 
 /* =========================
+   LINKS + HOVER (REQUIRED)
+========================= */
+
+.link-btn {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 8px 12px;
+    background: hsl(210, 80%, 30%);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.link-btn:hover {
+    background: hsl(210, 80%, 40%);
+    transform: translateY(-2px);
+}
+
+/* =========================
    FOOTER
 ========================= */
 
@@ -192,4 +197,37 @@ img {
     padding: 20px;
     font-size: 0.9rem;
     color: hsl(210, 10%, 40%);
+}
+
+/* =========================
+   MEDIA QUERIES
+========================= */
+
+/* Tablet */
+@media (min-width: 768px) {
+
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav-links {
+        flex-direction: row;
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+
+    .project-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
