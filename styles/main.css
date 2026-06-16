@@ -3,6 +3,15 @@
 /* =========================
    RESET (REQUIRED)
 ========================= */
+
+:root {
+    --primary: #2f466f;
+    --accent: #facc15;
+    --bg: #eef2f7;
+    --text: #1f2937;
+    --card: #ffffff;
+}
+
 *, *::before, *::after {
     margin: 0;
     padding: 0;
@@ -18,7 +27,16 @@ body {
     background-color: hsl(210, 40%, 96%);
     color: hsl(210, 20%, 20%);
     line-height: 1.6;
+    font-size: 1rem; 
 }
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
 
 /* =========================
    HERO SECTION
@@ -32,11 +50,11 @@ body {
 }
 
 .hero-title {
-    font-size: 2.5rem;
+    font-size: clamp(2rem, 8vw, 4rem);
 }
 
 .hero-subtitle {
-    opacity: 0.9;
+    font-size: clamp(1rem, 3vw, 1.5rem);
 }
 
 /* =========================
@@ -44,8 +62,9 @@ body {
 ========================= */
 
 .main-container {
-    width: min(1100px, 90%);
-    margin: 2rem auto;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* =========================
