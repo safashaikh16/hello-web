@@ -88,3 +88,25 @@ The goal was to keep the design minimal, readable, and visually balanced.
 ## Reflection
 This project helped me understand how HTML and CSS work together to create real websites.  
 I also learned how Git commits track progress step-by-step and how deployment works using GitHub Pages.
+
+# Week 3: Layout Like a Pro
+
+## Links
+- GitHub Repository: https://github.com/safashaikh16/hello-web
+- Live Site:  https://safashaikh16.github.io/hello-web/
+
+## Screenshot
+
+![alt text](<Assignment 3 page 1.png>)
+![alt text](<Assignment 3 page 2.png>)
+
+
+## Layout Tools Used
+
+1. Flexbox
+
+I used Flexbox for the navigation bar because it is a one-dimensional layout that makes it easy to align items horizontally, control spacing with the gap property, and distribute content evenly.
+
+2. CSS Grid
+
+I used CSS Grid for the Project Gallery because it is a two-dimensional layout system that automatically adapts to different screen sizes. 
