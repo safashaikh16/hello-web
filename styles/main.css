@@ -127,14 +127,41 @@ body {
 ========================= */
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 1.5rem;
+    margin-top: 1.5rem;
 }
 
 .project-card {
     background: #f8fafc;
-    padding: 1.5rem;
-    border-radius: 12px;
+    padding: 1.8rem;
+    border-radius: 16px;
+    border: 1px solid #e5e7eb;
+    border-left: 6px solid #2f466f;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+}
+
+.project-card h3 {
+    margin: 0.5rem 0;
+    color: #1f2937;
+}
+
+.project-card p {
+    line-height: 1.6;
+}
+
+.project-tag {
+    display: inline-block;
+    background: #eef2ff;
+    color: #2f466f;
+    padding: 0.35rem 0.7rem;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.featured-project {
+    border-left-color: #facc15;
 }
 
 /* =========================
