@@ -110,3 +110,22 @@ I used Flexbox for the navigation bar because it is a one-dimensional layout tha
 2. CSS Grid
 
 I used CSS Grid for the Project Gallery because it is a two-dimensional layout system that automatically adapts to different screen sizes. 
+
+## Week 4: Go Responsive
+
+## Screenshots:
+
+### Mobile (375px)
+![alt text](<Week 4 screenshots/safashaikh16.github.io_hello-web_mobile375.png>)
+
+### Tablet (768px)
+![alt text](<Week 4 screenshots/safashaikh16.github.io_hello-web_ tablet768.png>)
+
+### Desktop (1024px)
+![alt text](<Week 4 screenshots/safashaikh16.github.io_hello-web_ desktop1024.png>)
+
+
+## Links
+- GitHub Repository: https://github.com/safashaikh16/hello-web
+- Live Site:  https://safashaikh16.github.io/hello-web/
+
