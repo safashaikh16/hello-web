@@ -213,23 +213,43 @@ function getFilteredProjects() {
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  // 1. Show all projects on page load
-  // TODO
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const searchInput = document.getElementById('search-input');
+  const projectGrid = document.getElementById('project-grid');
 
+  renderProjects(projects);
 
-  // 2. Filter buttons
-  // TODO
+  filterBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach((button) => {
+        button.classList.remove('active');
+      });
 
+      btn.classList.add('active');
 
-  // 3. Live search
-  // TODO
+      renderProjects(getFilteredProjects());
+    });
+  });
 
+  searchInput.addEventListener('input', () => {
+    renderProjects(getFilteredProjects());
+  });
 
-  // 4. Escape to clear
-  // TODO
+  searchInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      searchInput.value = '';
+      renderProjects(getFilteredProjects());
+    }
+  });
 
+  projectGrid.addEventListener('click', (e) => {
+    const link = e.target.closest('.card-link');
 
-  // BONUS: Event delegation on the project grid
-  // TODO
-
+    if (link) {
+      const card = link.closest('.project-card');
+      const title = card.querySelector('.card-title').textContent;
+      console.log(`Clicked project: ${title}`);
+    }
+  });
 });
+
