@@ -162,7 +162,25 @@ function renderProjects(list) {
 
 // STEP 3 — filter function
 function getFilteredProjects() {
+  const activeBtn = document.querySelector('.filter-btn.active');
+  const activeTech = activeBtn ? activeBtn.dataset.filter : 'all';
 
+  const searchTerm = document
+    .getElementById('search-input')
+    .value
+    .toLowerCase()
+    .trim();
+
+  return projects.filter((p) => {
+    const matchesTech = activeTech === 'all' || p.tech === activeTech;
+
+    const matchesSearch =
+      searchTerm === '' ||
+      p.title.toLowerCase().includes(searchTerm) ||
+      p.desc.toLowerCase().includes(searchTerm);
+
+    return matchesTech && matchesSearch;
+  });
 }
 
 
