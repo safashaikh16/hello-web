@@ -165,11 +165,8 @@ function getFilteredProjects() {
   const activeBtn = document.querySelector('.filter-btn.active');
   const activeTech = activeBtn ? activeBtn.dataset.filter : 'all';
 
-  const searchTerm = document
-    .getElementById('search-input')
-    .value
-    .toLowerCase()
-    .trim();
+  const searchInput = document.getElementById('search-input');
+  const searchTerm = searchInput ? searchInput.value.toLowerCase().trim() : '';
 
   return projects.filter((p) => {
     const matchesTech = activeTech === 'all' || p.tech === activeTech;
