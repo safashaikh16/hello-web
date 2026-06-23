@@ -102,13 +102,37 @@ const projects = [
 
 // STEP 1 — template function
 // Takes one project object → returns one card HTML string
-const projectCard = (p) => ``;
+const projectCard = (p) => `
+ <article class="project-card" data-tech="${p.tech}">
+    <span class="week-badge">Week ${p.week}</span>
+
+    <h3 class="card-title">${p.title}</h3>
+
+    <p class="card-desc">${p.desc}</p>
+
+    <div class="card-footer">
+      <span class="tech-tag ${p.tech}">${p.tech}</span>
+      <a href="${p.link}" class="card-link" target="_blank">View Demo →</a>
+    </div>
+  </article>
+`;
 
 
 // STEP 2 — render function
 // Takes any array of projects → updates the page
 function renderProjects(list) {
+ const projectGrid = document.getElementById('project-grid');
+  const resultsCount = document.getElementById('results-count');
 
+  if (list.length > 0) {
+    projectGrid.innerHTML = list.map(projectCard).join('');
+  } else {
+    projectGrid.innerHTML = `
+      <p class="empty-state">No projects found. Try another filter or search term.</p>
+    `;
+  }
+
+  resultsCount.textContent = `Showing ${list.length} of ${projects.length} projects`;
 }
 
 
