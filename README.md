@@ -129,3 +129,15 @@ I used CSS Grid for the Project Gallery because it is a two-dimensional layout s
 - GitHub Repository: https://github.com/safashaikh16/hello-web
 - Live Site:  https://safashaikh16.github.io/hello-web/
 
+## Week 6: Make it Dynamic
+
+## Links
+- GitHub Repository: https://github.com/safashaikh16/hello-web
+- Live Site:  https://safashaikh16.github.io/hello-web/
+
+# Screenshots
+
+Screenshot 1 (Search): ![alt text](<week6 screenshots/week6_scrrenshot1.png>)
+Screenshot 2 (Filter): ![alt text](<week6 screenshots/week6_screenshot 2.png>)
+
+
